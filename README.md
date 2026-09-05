@@ -1,10 +1,27 @@
-# git-profile
+<p align="center">
+  <img src="gitx-profile.png" alt="git-profile"/>
+</p>
 
-[![CI](https://github.com/Malay-dev/gitx-profile/actions/workflows/ci.yml/badge.svg)](https://github.com/Malay-dev/gitx-profile/actions/workflows/ci.yml)
-[![Go Report Card](https://goreportcard.com/badge/github.com/Malay-dev/gitx-profile)](https://goreportcard.com/report/github.com/Malay-dev/gitx-profile)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+<h1 align="center">git-profile</h1>
 
-**Manage multiple Git identities. Never commit with the wrong email again.**
+<p align="center">
+  <a href="https://github.com/Malay-dev/gitx-profile/actions/workflows/ci.yml"><img src="https://github.com/Malay-dev/gitx-profile/actions/workflows/ci.yml/badge.svg" alt="CI" /></a>
+  <a href="https://goreportcard.com/report/github.com/Malay-dev/gitx-profile"><img src="https://goreportcard.com/badge/github.com/Malay-dev/gitx-profile" alt="Go Report Card" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="License: MIT" /></a>
+</p>
+
+<p align="center"><strong>Manage multiple Git identities. Never commit with the wrong email again.</strong></p>
+
+```
+$ git profile use Personal
+
+  ✓ Switched to profile "Personal"
+
+    Scope:             Local
+    Repository:        my-side-project
+    Name:              Malay Kumar
+    Email:             malay@gmail.com
+```
 
 `git-profile` is a Git extension that lets you define named profiles (work, personal, open-source) and switch between them per repository. It integrates with Git's native extension system — just type `git profile`.
 
