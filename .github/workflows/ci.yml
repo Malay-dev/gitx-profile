@@ -32,10 +32,15 @@ jobs:
       - name: Run tests
         run: go test ./... -v -race -coverprofile=coverage.out
 
-      - name: Build binary
+      - name: Build binary (Unix)
         run: go build -o git-profile .
+        if: runner.os != 'Windows'
 
-      - name: Verify binary runs
+      - name: Build binary (Windows)
+        run: go build -o git-profile.exe .
+        if: runner.os == 'Windows'
+
+      - name: Verify binary runs (Unix)
         run: ./git-profile --help
         if: runner.os != 'Windows'
 

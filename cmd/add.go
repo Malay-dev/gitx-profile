@@ -90,7 +90,7 @@ before the profile is created. You can override any field with explicit flags.`,
 			Name:       profileName,
 			UserName:   addName,
 			UserEmail:  addEmail,
-			SigningKey:  addSigningKey,
+			SigningKey: addSigningKey,
 			SSHKeyPath: addSSHKey,
 		}
 

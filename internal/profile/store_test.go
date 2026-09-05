@@ -239,7 +239,7 @@ func TestStore_PersistenceRoundtrip(t *testing.T) {
 		Name:       "work",
 		UserName:   "Malay Kumar",
 		UserEmail:  "malay@company.com",
-		SigningKey:  "DEADBEEF",
+		SigningKey: "DEADBEEF",
 		SSHKeyPath: "~/.ssh/work",
 	})
 	store.Add(Profile{
