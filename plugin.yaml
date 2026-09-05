@@ -1,0 +1,41 @@
+# gitx plugin manifest
+# This file allows the future gitx marketplace to discover and manage this plugin.
+
+name: git-profile
+version: 0.1.0
+description: Manage multiple Git identities — switch profiles per repository or globally.
+author: Malay Kumar
+repository: https://github.com/Malay-dev/gitx-profile
+license: MIT
+
+# The binary name that Git will discover as a subcommand.
+# "git-profile" → allows "git profile <command>"
+binary: git-profile
+
+# Commands this plugin registers under "git"
+commands:
+  - profile
+
+# Platforms supported
+platforms:
+  - linux/amd64
+  - linux/arm64
+  - darwin/amd64
+  - darwin/arm64
+  - windows/amd64
+
+# Git hooks this plugin can integrate with (optional)
+hooks:
+  - pre-commit
+
+# Minimum Git version required
+requires:
+  git: ">=2.36"
+
+# Tags for registry discovery
+tags:
+  - identity
+  - profile
+  - config
+  - multi-account
+  - security

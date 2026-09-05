@@ -1,0 +1,28 @@
+# Binary
+git-profile
+git-profile.exe
+
+# GoReleaser
+dist/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Test artifacts
+coverage.out
+coverage.html
+
+# Environment
+.env
+.envrc
+
+# Docs
+idea.md
