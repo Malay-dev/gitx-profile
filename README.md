@@ -288,34 +288,6 @@ Modes: `strict` (blocks), `warning` (asks), `advisory` (suggests).
 | `GITX_PROFILES_PATH` | Custom path to profiles file | `~/.gitprofiles` |
 | `GITX_POLICIES_PATH` | Custom path to policies file | `~/.git-profile/policies.yaml` |
 
-## Roadmap
-
-- [x] Core CLI (add, list, use, current, show, check, remove, doctor)
-- [x] `--from` flag (inherit from global config or existing profile)
-- [x] Policy engine (user-level + repo-level)
-- [x] CI/CD (GitHub Actions + GoReleaser)
-- [ ] Remote-based auto-suggestions
-- [ ] Pre-commit hook integration (`git profile enable-guard`)
-- [ ] SSH key switching (v2)
-- [ ] gitx plugin marketplace (separate project)
-
-## Part of the gitx Ecosystem
-
-`git-profile` is the first tool in a broader vision: **gitx** — a platform for Git extensions.
-
-Future plugins:
-- `git-guard` — enforce branch and commit policies
-- `git-doctor` — comprehensive Git health diagnostics
-- `git-secrets` — prevent secrets from being committed
-
-Each plugin is standalone, installable via `gitx install`, and follows Git's native extension pattern.
-
-See [idea.md](idea.md) for the full vision.
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions, project structure, and guidelines.
-
 ## License
 
 [MIT](LICENSE)
